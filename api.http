@@ -1,0 +1,24 @@
+### Recuperar todas las películas
+GET http://localhost:3000/movies
+
+### Recuperar película por id
+GET http://localhost:3000/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+
+### Filtrar películas por género
+GET http://localhost:3000/movies?genre=action
+
+### Crear una nueva película
+POST http://localhost:3000/movies
+Content-Type: application/json
+
+{
+  "year": "pepote"
+}
+
+### Actualizar una película
+PATCH http://localhost:3000/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+Content-Type: application/json
+
+{
+  "year": 1999
+}
